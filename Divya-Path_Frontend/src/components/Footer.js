@@ -14,9 +14,8 @@ export class Footer extends Component {
                     <h4>About </h4>
                     The Divya-Path project aims to provide a comprehensive
                     platform for people with special needs, particularly Divyang
-                    individuals. The system has been designed to be
-                    user-friendly and offers a talkback feature to enhance the
-                    user experience.
+                    individuals by providing them with essential services,
+                    learning opportunities, and employment prospects.
                   </div>
                   <div className="col-lg-1" />
                   <div className="col-md-4">
