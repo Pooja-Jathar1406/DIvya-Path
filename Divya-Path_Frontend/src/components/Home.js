@@ -135,7 +135,7 @@ export class Home extends Component {
                       <h5
                         className="card-title pt-2 fw-bold"
                         style={{ textDecoration: "initial", color: "black" }}>
-                        Mental Health
+                        Mental Health stable theva
                       </h5>
                     </div>
                   </div>
