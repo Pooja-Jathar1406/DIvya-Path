@@ -25,7 +25,7 @@ export class AboutUs extends Component {
                   catastrophic climate change and persistent gender inequality.
                   We believe societies and economies can work for the benefit of
                   all. That we can live within the planet’s means. That
-                  ingenuity and cooperation can conquer any challenge.
+                  ingenuity and cooperation can conquer any challenge.HELLO123!!!
                 </div>
                 <div className="col-lg-4">
                   <img
