@@ -16,11 +16,7 @@ export class Home extends Component {
               </div>
 
               <div className="container pb-5 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor
+                Future belongs to us with the affirmative actions taken by us as a Community to make this world better place to live and thrive for everyone.
               </div>
             </div>
           </Container>
@@ -173,7 +169,7 @@ export class Home extends Component {
                     <h5 className="card-title p-1 fw-bold">
                       Language compatibility
                     </h5>
-                    <p className="card-text">Info abt places accessible.</p>
+                    <p className="card-text">Your portal with your language</p>
                   </div>
                 </div>
               </div>
@@ -183,7 +179,7 @@ export class Home extends Component {
                   style={{ width: "auto" }}>
                   <div className="card-body ">
                     <h5 className="card-title p-1 fw-bold">Accesible places</h5>
-                    <p className="card-text">Info abt places accessible.</p>
+                    <p className="card-text">Ensure accebility with us</p>
                   </div>
                 </div>
               </div>
@@ -195,7 +191,7 @@ export class Home extends Component {
                   style={{ width: "auto" }}>
                   <div className="card-body  ">
                     <h5 className="card-title p-1 fw-bold">Jobs</h5>
-                    <p className="card-text">Info abt places accessible.</p>
+                    <p className="card-text">Explore the career opportunities</p>
                   </div>
                 </div>
               </div>
@@ -205,7 +201,7 @@ export class Home extends Component {
                   style={{ width: "auto" }}>
                   <div className="card-body ">
                     <h5 className="card-title p-1 fw-bold">Courses</h5>
-                    <p className="card-text">Info abt places accessible.</p>
+                    <p className="card-text">Upskill and Re-Skill yourself</p>
                   </div>
                 </div>
               </div>
@@ -217,7 +213,7 @@ export class Home extends Component {
                   style={{ width: "auto" }}>
                   <div className="card-body  ">
                     <h5 className="card-title p-1 fw-bold">Mental health</h5>
-                    <p className="card-text">Info abt places accessible.</p>
+                    <p className="card-text">Healthy minds keeps you healthy</p>
                   </div>
                 </div>
               </div>
@@ -229,7 +225,7 @@ export class Home extends Component {
                     <h5 className="card-title p-1 fw-bold">
                       Government schemes
                     </h5>
-                    <p className="card-text">Info abt places accessible.</p>
+                    <p className="card-text">Know your benifits</p>
                   </div>
                 </div>
               </div>

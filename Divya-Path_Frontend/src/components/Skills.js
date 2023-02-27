@@ -5,6 +5,7 @@ import { Navigation } from "./Navigation";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 export class Skills extends Component {
     render() {
@@ -19,17 +20,13 @@ export class Skills extends Component {
                             </div>
 
                             <div className="container pb-5 text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor
+                                Adults with disabilities make up nearly 20% of the Indian workforce, but they often face greater challenges in finding and maintaining employment. In most cases, this is because they’re not given the opportunity to develop soft and hard job skills that characterize appealing candidates.
                             </div>
                         </div>
                     </Container>
-                    <Container>body content here</Container>
+                    <Container></Container>
                     <div className="container">
-                        <div className="row">
+                        <div className="row pb-5" >
                             <div className="col">
                                 <div className="card navCards  " style={{ width: "auto" }}>
                                     <div className="card-body">
@@ -107,7 +104,7 @@ export class Skills extends Component {
                             <div className="col">
                                 <a href="./Header.html" className="custom-card">
                                     <div
-                                        className="card navCards text-center pt-3 activeNavCard" 
+                                        className="card navCards text-center pt-3 activeNavCard"
                                         style={{ width: "12rem", display: "inline-block" }}>
                                         <img
                                             src="../Images/Courses.png"
@@ -165,23 +162,46 @@ export class Skills extends Component {
                                 </a>
                             </div>
                         </div>
-                        <Row xs={1} md={2} className="g-4">
-                            {Array.from({ length: 4 }).map((_, idx) => (
-                                <Col>
-                                    <Card>
-                                        <Card.Img variant="top" src="holder.js/100px160" />
-                                        <Card.Body>
-                                            <Card.Title>Card title</Card.Title>
-                                            <Card.Text>
-                                                This is a longer card with supporting text below as a natural
-                                                lead-in to additional content. This content is a little bit
-                                                longer.
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                            ))}
-                        </Row>
+
+                        <CardGroup>
+                            <Card>
+                                <Card.Img variant="top" src=".Images/skills2.jpg" />
+                                <Card.Body>
+                                    <Card.Title>Graphic Designing</Card.Title>
+                                    <Card.Text>
+                                        Learn what graphic design is and how to become a graphic designer. Learn what a graphic designer does on the job.
+                                        Learn the principles of great graphic design
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Last updated 3 mins ago</small>
+                                </Card.Footer>
+                            </Card>
+                            <Card>
+                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Body>
+                                    <Card.Title>TeleCaller</Card.Title>
+                                    <Card.Text>
+                                    This course is for the ones in customer care services who want to learn about some of the calling dos and don'ts they think are missing to polish their Tele calling skills. All important professional lines for the calling business are mentioned in this course. 
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Last updated 3 mins ago</small>
+                                </Card.Footer>
+                            </Card>
+                            <Card>
+                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Body>
+                                    <Card.Title>Software developer</Card.Title>
+                                    <Card.Text>
+                                    This is a great place to start your programming career or hobby. This course is best for you,If you have never programmed before, or If you are fairly new to programming.
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Last updated 3 mins ago</small>
+                                </Card.Footer>
+                            </Card>
+                        </CardGroup>
                     </div>
                 </div>
             </>
