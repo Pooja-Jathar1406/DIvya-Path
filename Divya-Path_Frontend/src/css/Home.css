@@ -18,8 +18,7 @@
     justify-content: center;
     align-items: center;
 } 
- 
- 
+  
 .centeredText {
     position: absolute;
     top: 50%;
@@ -41,9 +40,7 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-   
-
-
+    
   .navCards{
     /* background: linear-gradient(187.03deg, #020D2F -64.82%, rgba(202, 202, 206, 0) 89.45%);
     border-bottom: 5px solid #020D2F; */
