@@ -6,6 +6,7 @@ import { Login } from "./components/Login";
 import { SignUp } from "./components/SignUp";
 import { AdminLogin } from "./components/AdminLogin";
 import { AdminSignUp } from "./components/AdminSignUp";
+import { Skills } from "./components/Skills";
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
             path="/admin-sign-up"
             element={<AdminSignUp></AdminSignUp>}></Route>
           <Route path="/sign-out" element={<Login></Login>}></Route>
+          <Route path="/skills" element={<Skills></Skills>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

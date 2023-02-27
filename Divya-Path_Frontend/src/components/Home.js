@@ -61,7 +61,7 @@ export class Home extends Component {
                 </div>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="./skills" className="custom-card">
                   <div
                     className="card navCards   text-center pt-3"
                     style={{ width: "13rem", display: "inline-block" }}>
@@ -81,7 +81,7 @@ export class Home extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="./skills" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -101,7 +101,9 @@ export class Home extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="login" className="custom-card">
+ 
+                <a href="skills" className="custom-card">
+ 
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -121,7 +123,7 @@ export class Home extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="./skills" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -134,14 +136,14 @@ export class Home extends Component {
                       <h5
                         className="card-title pt-2 fw-bold"
                         style={{ textDecoration: "initial", color: "black" }}>
-                        Mental Health normal
+                        Mental Health
                       </h5>
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="skills" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
