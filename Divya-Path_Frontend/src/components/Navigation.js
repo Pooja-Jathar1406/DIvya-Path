@@ -6,7 +6,7 @@ import "../css/Navigation.css";
 export class Navigation extends Component {
   render() {
     return (
-      <Navbar expand="lg" class=" shadow  ">
+      <Navbar expand="lg" class=" shadow pb-5 ">
         <Container fluid>
           <Navbar.Brand href="#home">
             <img
