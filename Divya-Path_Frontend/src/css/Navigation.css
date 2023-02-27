@@ -27,15 +27,15 @@ body{
   .nav-link:hover,
   .nav-link:active .show>.nav-link{
     color: #131311;
-    background-color: #c3c3c3; 
+    background-color: #ffffff; 
   }
  .activeLink{
   color: #131311;
-    background-color: #c3c3c3;
+    background-color: #ffffff;
  }
  .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
   color: #131311;
-  background-color: #c3c3c3;
+  background-color: #ffffff;
 } 
   
 @media (min-width: 992px){
