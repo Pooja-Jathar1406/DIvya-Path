@@ -14,9 +14,9 @@ export class Skills extends Component {
                 <Navigation></Navigation>
                 <div className=" bg-light">
                     <Container fluid>
-                        <div className="container-fluid  ">
+                        <div className="container ">
                             <div className="row text-center ">
-                                <h1 className="p-5 HomePgTitle"> SKILLS</h1>
+                                <h1 className="p-5 HomePgTitle border"> SKILLS</h1>
                             </div>
 
                             <div className="container pb-5 text-center">
@@ -24,7 +24,6 @@ export class Skills extends Component {
                             </div>
                         </div>
                     </Container>
-                    <Container></Container>
                     <div className="container">
                         <div className="row pb-5" >
                             <div className="col">
@@ -163,45 +162,55 @@ export class Skills extends Component {
                             </div>
                         </div>
 
-                        <CardGroup>
-                            <Card>
-                                <Card.Img variant="top" src=".Images/skills2.jpg" />
-                                <Card.Body>
-                                    <Card.Title>Graphic Designing</Card.Title>
-                                    <Card.Text>
-                                        Learn what graphic design is and how to become a graphic designer. Learn what a graphic designer does on the job.
-                                        Learn the principles of great graphic design
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
-                                <Card.Body>
-                                    <Card.Title>TeleCaller</Card.Title>
-                                    <Card.Text>
-                                    This course is for the ones in customer care services who want to learn about some of the calling dos and don'ts they think are missing to polish their Tele calling skills. All important professional lines for the calling business are mentioned in this course. 
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
-                                <Card.Body>
-                                    <Card.Title>Software developer</Card.Title>
-                                    <Card.Text>
-                                    This is a great place to start your programming career or hobby. This course is best for you,If you have never programmed before, or If you are fairly new to programming.
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                        </CardGroup>
+                        <Row>
+                            <Col>
+                                <Card>
+                                    <Card.Img variant="top" className="cardImage" src="./Images/skills2.jpg" />
+                                    <Card.Body>
+                                        <Card.Title>Graphic Designing</Card.Title>
+                                        <Card.Text>
+                                            Learn what graphic design is and how to become a graphic designer. Learn what a graphic designer does on the job.You will learn differ UI/UX technology.
+                                            Learn the principles of great graphic design. Design studies will offer you opportunities.
+                                        </Card.Text>
+
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <button className="btn btn-primary">Enroll</button>
+                                    </Card.Footer>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card>
+                                    <Card.Img variant="top" className="cardImage" src="./Images/skills3.jpg" />
+                                    <Card.Body>
+                                        <Card.Title>TeleCaller</Card.Title>
+                                        <Card.Text>
+                                            This course is for the ones in customer care services who want to learn about some of the calling dos and don'ts they think are missing to polish their Tele calling skills. All important professional lines for the calling business are mentioned in this course.
+                                        </Card.Text>
+
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <button className="btn btn-primary">Enroll</button>
+                                    </Card.Footer>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card>
+                                    <Card.Img variant="top" className="cardImage" src="./Images/skills4.jpg" />
+                                    <Card.Body>
+                                        <Card.Title>Software developer</Card.Title>
+                                        <Card.Text>
+                                            This is a great place to start your programming career or hobby. This course is best for you,If you have never programmed before, or If you are fairly new to programming.Programming will offer a broad spectrum of opportunities.
+                                        </Card.Text>
+                                    </Card.Body>
+
+                                    <Card.Footer>
+                                        <button className="btn btn-primary">Enroll</button>
+                                        <button className="btn btn-primary text-right">Enroll</button>
+                                    </Card.Footer>
+                                </Card>
+                            </Col>
+                        </Row>
                     </div>
                 </div>
             </>
