@@ -11,8 +11,6 @@ import { Navigation } from "./Navigation";
 
 export function AdminLogin() {
   const [validated, setValidated] = useState(false);
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
 
   const initialValues = {
     email: "",
