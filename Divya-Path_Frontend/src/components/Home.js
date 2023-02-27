@@ -12,7 +12,7 @@ export class Home extends Component {
           <Container fluid>
             <div className="container-fluid  ">
               <div className="row text-center ">
-                <h1 className="p-5 HomePgTitle"> Divya-Path1 </h1>
+                <h1 className="p-5 HomePgTitle"> Divya-Path </h1>
               </div>
 
               <div className="container pb-5 text-center">
@@ -24,9 +24,8 @@ export class Home extends Component {
               </div>
             </div>
           </Container>
-          <Container>body content here</Container>
-          <div className="container">
-            <div className="row">
+          <div className="container ">
+            <div className="row ">
               <div className="col">
                 <div className="card navCards  " style={{ width: "auto" }}>
                   <div className="card-body">
@@ -64,7 +63,7 @@ export class Home extends Component {
               <div className="col">
                 <a href="./skills" className="custom-card">
                   <div
-                    className="card navCards text-center pt-3"
+                    className="card navCards   text-center pt-3"
                     style={{ width: "13rem", display: "inline-block" }}>
                     <img
                       src="../Images/Places.png"
@@ -102,7 +101,9 @@ export class Home extends Component {
                 </a>
               </div>
               <div className="col">
+ 
                 <a href="skills" className="custom-card">
+ 
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
