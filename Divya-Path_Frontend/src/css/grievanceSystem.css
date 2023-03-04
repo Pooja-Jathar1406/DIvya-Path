@@ -1,16 +1,16 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #083a25;
-}
+} */
 
 .complaint-register {
     width: 460px;
@@ -25,15 +25,15 @@ body {
     margin-bottom: 25px;
 }
 
-.login form {
+.grievfontsize {
     font-size: 20px;
 }
 
-.login form .form-group {
+/* .login form .form-group {
     margin-bottom: 12px;
-}
+} */
 
-.login form input[type="submit"] {
+/* .login form input[type="submit"] {
     font-size: 20px;
     margin-top: 15px;
-}
+} */
