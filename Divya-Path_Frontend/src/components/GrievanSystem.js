@@ -8,7 +8,7 @@ var GrievanceSystem = React.createClass({
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           {/* Bootstrap v5.1.3 CDNs */}
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="grievanceSystem.css" />
           <div className="complaint-register">
             <h3 className="text-center">Grievance Registration</h3>
             <form className="needs-validation">
