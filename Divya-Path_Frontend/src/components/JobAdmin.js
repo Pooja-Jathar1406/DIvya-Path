@@ -115,6 +115,7 @@ export function JobAdmin() {
             <br />
           </div>
         </div>
+        </div>
       );
     }
   
