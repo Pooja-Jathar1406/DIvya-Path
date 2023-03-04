@@ -64,7 +64,7 @@ export class Skills extends Component {
                 </div>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="places" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "13rem", display: "inline-block" }}>
@@ -84,7 +84,7 @@ export class Skills extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="jobs" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -104,7 +104,7 @@ export class Skills extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="skills" className="custom-card">
                   <div
                     className="card navCards text-center pt-3 activeNavCard"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -124,7 +124,7 @@ export class Skills extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="mentalHealth" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -144,7 +144,7 @@ export class Skills extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./Header.html" className="custom-card">
+                <a href="govtSchemes" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -210,6 +210,7 @@ export class Skills extends Component {
                   </Card.Footer>
                 </Card>
               </Col>
+              
               <Col>
                 <Card>
                   <Card.Img

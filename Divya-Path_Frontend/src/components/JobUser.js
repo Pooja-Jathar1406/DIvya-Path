@@ -1,16 +1,22 @@
 import { Component } from "react";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap/";
+import { LinkContainer } from "react-router-bootstrap";
 import "../css/Home.css";
 import "../css/Navigation.css";
 import { Navigation } from "./Navigation";
 import "../css/Footer.css";
 
+//import { Container } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 export class JobUser extends Component {
   render() {
     return  (
       <>
         <Navigation></Navigation>
-       
+      
         <title>Job_User</title>
         <div className="container">
           <br />
