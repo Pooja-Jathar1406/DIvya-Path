@@ -16,7 +16,9 @@ export class Home extends Component {
               </div>
 
               <div className="container pb-5 text-center">
-                Future belongs to us with the affirmative actions taken by us as a Community to make this world better place to live and thrive for everyone.
+                Future belongs to us with the affirmative actions taken by us as
+                a Community to make this world better place to live and thrive
+                for everyone.
               </div>
             </div>
           </Container>
@@ -57,7 +59,7 @@ export class Home extends Component {
                 </div>
               </div>
               <div className="col">
-                <a href="./skills" className="custom-card">
+                <a href="places" className="custom-card">
                   <div
                     className="card navCards   text-center pt-3"
                     style={{ width: "13rem", display: "inline-block" }}>
@@ -97,9 +99,7 @@ export class Home extends Component {
                 </a>
               </div>
               <div className="col">
- 
                 <a href="skills" className="custom-card">
- 
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>
@@ -191,7 +191,9 @@ export class Home extends Component {
                   style={{ width: "auto" }}>
                   <div className="card-body  ">
                     <h5 className="card-title p-1 fw-bold">Jobs</h5>
-                    <p className="card-text">Explore the career opportunities</p>
+                    <p className="card-text">
+                      Explore the career opportunities
+                    </p>
                   </div>
                 </div>
               </div>

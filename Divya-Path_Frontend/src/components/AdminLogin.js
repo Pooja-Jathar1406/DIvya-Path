@@ -158,5 +158,3 @@ export function AdminLogin() {
     </>
   );
 }
-
-// render(<SignUpForm />);

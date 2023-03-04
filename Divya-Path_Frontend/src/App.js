@@ -7,6 +7,7 @@ import { SignUp } from "./components/SignUp";
 import { AdminLogin } from "./components/AdminLogin";
 import { AdminSignUp } from "./components/AdminSignUp";
 import { Skills } from "./components/Skills";
+import { Places } from "./components/Places";
 function App() {
   return (
     <div>
@@ -23,6 +24,7 @@ function App() {
             path="/admin-sign-up"
             element={<AdminSignUp></AdminSignUp>}></Route>
           <Route path="/sign-out" element={<Login></Login>}></Route>
+          <Route path="/places" element={<Places></Places>}></Route>
           <Route path="/skills" element={<Skills></Skills>}></Route>
         </Routes>
         <Footer></Footer>
