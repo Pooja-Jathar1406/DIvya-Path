@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Container } from "react-bootstrap";
 import "../css/Home.css";
+import { JobAdmin } from "./JobAdmin";
 import { Navigation } from "./Navigation";
 
 export class Home extends Component {
@@ -79,7 +80,7 @@ export class Home extends Component {
                 </a>
               </div>
               <div className="col">
-                <a href="./skills" className="custom-card">
+                <a href="jobs" className="custom-card">
                   <div
                     className="card navCards text-center pt-3"
                     style={{ width: "12rem", display: "inline-block" }}>

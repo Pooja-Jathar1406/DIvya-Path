@@ -210,6 +210,7 @@ export class Skills extends Component {
                   </Card.Footer>
                 </Card>
               </Col>
+              
               <Col>
                 <Card>
                   <Card.Img
