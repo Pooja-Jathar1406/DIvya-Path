@@ -62,5 +62,6 @@ export function JobUser(){
           <br />
         </div>
       </div>
+      </div>
     );
   }
