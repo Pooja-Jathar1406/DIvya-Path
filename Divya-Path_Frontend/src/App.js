@@ -7,6 +7,8 @@ import { SignUp } from "./components/SignUp";
 import { AdminLogin } from "./components/AdminLogin";
 import { AdminSignUp } from "./components/AdminSignUp";
 import { Skills } from "./components/Skills";
+import { AddCourse } from "./components/AddCourse";
+import { CoursePage } from "./components/CoursePage";
 function App() {
   return (
     <div>
@@ -24,6 +26,8 @@ function App() {
             element={<AdminSignUp></AdminSignUp>}></Route>
           <Route path="/sign-out" element={<Login></Login>}></Route>
           <Route path="/skills" element={<Skills></Skills>}></Route>
+          <Route path="/addcourse" element={<AddCourse></AddCourse>}></Route>
+          <Route path="/coursepage" element={<CoursePage></CoursePage>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
