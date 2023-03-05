@@ -69,8 +69,7 @@ export function SignUp() {
                       required
                       type="text"
                       placeholder="Name"
-                      pattern="[^[a-zA-Z]*$
-                      {2,20}]"
+                      pattern="[a-z,A-Z]{3,50}"
                       name="fname"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -125,6 +124,28 @@ export function SignUp() {
                       Please Enter Valid Email address
                     </Form.Control.Feedback>
                   </Form.Group>
+
+                  <Form.Group
+                    as={Col}
+                    md="12"
+                    controlId="validationCustom01"
+                    className="mb-3">
+                    <Form.Label>City</Form.Label>
+                    <Form.Control
+                      required
+                      type="text"
+                      placeholder="City"
+                      pattern="[a-z,A-Z]{3,50}"
+                      name="city"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                    <Form.Control.Feedback type="invalid">
+                      Please Enter Valid City
+                    </Form.Control.Feedback>
+                  </Form.Group>
+
                   <Form.Group
                     as={Col}
                     md="12"
