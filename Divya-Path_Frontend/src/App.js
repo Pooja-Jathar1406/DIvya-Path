@@ -7,16 +7,17 @@ import { SignUp } from "./components/SignUp";
 import { AdminLogin } from "./components/AdminLogin";
 import { AdminSignUp } from "./components/AdminSignUp";
 import { Skills } from "./components/Skills";
- 
+
 import { Places } from "./components/Places";
- 
+
 import { JobUser } from "./components/JobUser";
 import { JobAdmin } from "./components/JobAdmin";
 
 import { AddCourse } from "./components/AddCourse";
 import { CoursePage } from "./components/CoursePage";
 
- 
+import { PlacesAdmin } from "./components/PlacesAdmin";
+
 function App() {
   return (
     <div>
@@ -42,6 +43,9 @@ function App() {
           <Route path="/addcourse" element={<AddCourse></AddCourse>}></Route>
           <Route path="/coursepage" element={<CoursePage></CoursePage>}></Route>
 
+          <Route
+            path="/places-admin"
+            element={<PlacesAdmin></PlacesAdmin>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
