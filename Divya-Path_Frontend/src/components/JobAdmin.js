@@ -155,7 +155,14 @@ export function JobAdmin() {
           </div>
           <br />
         </div>
+ 
       </div>
     </div>
   );
 }
+ 
+        </div>
+      );
+    }
+  
+ 
