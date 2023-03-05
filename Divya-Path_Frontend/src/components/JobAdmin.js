@@ -5,8 +5,7 @@ import { Navigation } from "./Navigation";
 import "../css/Footer.css";
 
 
-export class JobAdmin extends Component {
-  render() {
+export function JobAdmin(){
     return  (
         <>
           <Navigation></Navigation>
@@ -106,4 +105,3 @@ export class JobAdmin extends Component {
         </>
       );
     }
-}
