@@ -59,7 +59,12 @@
     width: 60px;
    
 }
-
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 50%;  
+  align-self: stretch
+}
 .activeNavCard{
   /* background: linear-gradient(186.47deg, rgba(202, 202, 206, 0) 5.09%, #07278A 612.61%); */
   background: linear-gradient(186.47deg, #FFFFFF 5.09%, #07278A 612.61%);
@@ -85,5 +90,9 @@
 
 .cardImage{
   height: 230px;
+  width: contain;
+}
+.card-img, .card-img-top, .card-img-bottom {
+  width: fit-content;
 }
 

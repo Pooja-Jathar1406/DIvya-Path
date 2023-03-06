@@ -4,7 +4,7 @@ import { Navigation } from "./Navigation";
 import "../css/Home.css";
 import { Tab, Tabs, tabKey, initTabKey } from "react-bootstrap";
 
-export function Places() {
+export function PlacesAdmin() {
   const [tabKey, initTabKey] = useState("one");
   return (
     <>
@@ -156,6 +156,9 @@ export function Places() {
             {/*--------------- search in your city   ----------------*/}
             <div className="container">
               <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" className="btn btn-primary me-md-2">
+                  Add new place
+                </button>
                 <button type="submit" className="btn btn-primary me-md-2">
                   Read aloud
                   <img style={{ height: 20 }} src="../Images/Speaker2.png" />

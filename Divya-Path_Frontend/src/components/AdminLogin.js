@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { Container } from "react-bootstrap";
 
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useNavigate } from "react-router-dom";
 import { getAdminLoginDetailsFromServer } from "../Services/ApiServices";
@@ -33,10 +32,7 @@ export function AdminLogin() {
     event.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    // const response = await axios.post(
-    //   "http://localhost:8585/user/login",
-    //   formValues
-    // );
+
     const response = await getAdminLoginDetailsFromServer(formValues);
     console.log(response.data);
     if (response.data == "Login successful") {

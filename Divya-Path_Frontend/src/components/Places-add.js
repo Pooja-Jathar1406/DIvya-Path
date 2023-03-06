@@ -4,7 +4,7 @@ import { Navigation } from "./Navigation";
 import "../css/Home.css";
 import { Tab, Tabs, tabKey, initTabKey } from "react-bootstrap";
 
-export function Places() {
+export function AddPlaces() {
   const [tabKey, initTabKey] = useState("one");
   return (
     <>
