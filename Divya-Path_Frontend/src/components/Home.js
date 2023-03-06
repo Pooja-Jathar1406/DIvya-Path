@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Container } from "react-bootstrap";
 import "../css/Home.css";
-import { JobAdmin } from "./JobAdmin";
+// import { JobAdmin } from "./JobAdmin";
 import { Navigation } from "./Navigation";
 
 export class Home extends Component {

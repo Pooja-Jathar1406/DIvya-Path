@@ -11,7 +11,7 @@ import { Skills } from "./components/Skills";
 import { Places } from "./components/Places";
 
 import { JobUser } from "./components/JobUser";
-import { JobAdmin } from "./components/JobAdmin";
+// import { JobAdmin } from "./components/JobAdmin";
 
 import { AddCourse } from "./components/AddCourse";
 import { CoursePage } from "./components/CoursePage";
@@ -38,7 +38,7 @@ function App() {
           <Route path="/skills" element={<Skills></Skills>}></Route>
 
           <Route path="/jobs" element={<JobUser></JobUser>}></Route>
-          <Route path="/jobs-admin" element={<JobAdmin></JobAdmin>}></Route>
+          {/* <Route path="/jobs-admin" element={<JobAdmin></JobAdmin>}></Route> */}
 
           <Route path="/addcourse" element={<AddCourse></AddCourse>}></Route>
           <Route path="/coursepage" element={<CoursePage></CoursePage>}></Route>

@@ -13,7 +13,7 @@ export function CoursePage() {
             <Navigation></Navigation>
             <div class="card">
                 <div class="card-header">
-                  {coursedetails.coursename}
+                  {/* {coursedetails.coursename} */}
                 </div>
                 <div class="card-body">
                     <h5 class="card-title"> as Special title treatment</h5>
