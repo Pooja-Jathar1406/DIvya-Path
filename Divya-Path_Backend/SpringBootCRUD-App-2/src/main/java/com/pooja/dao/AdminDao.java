@@ -14,7 +14,6 @@ import com.pooja.model.Admin;
 public interface AdminDao extends JpaRepository<Admin, Integer> {
 	public List<Admin> findByName(@Param(value = "name") String name);
  
-	
 	@Query(value = "SELECT * FROM admin a WHERE a.email = :email and a.password=:password", nativeQuery = true)
 	List<Admin> findAllActiveAdminsNative(@Param(value = "email") String email, @Param(value = "password") String password);
 

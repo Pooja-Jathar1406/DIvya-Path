@@ -4,17 +4,19 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+ 
 
-@Entity
-@Table(name="UserDetails")
+@Entity 
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int uid;
 	private String name;
+	private String city;
 	private String mobile;
 	private String email;
+	private String disabiltyType; 
+	private String education;
 	private String password;
 	
 	
@@ -42,13 +44,29 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getDisabiltyType() {
+		return disabiltyType;
+	}
+	public void setDisabiltyType(String disabiltyType) {
+		this.disabiltyType = disabiltyType;
+	}
+	public String getEducation() {
+		return education;
+	}
+	public void setEducation(String education) {
+		this.education = education;
+	}
 	public String getPassword() {
 		return password;
 	}
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	 
-	
-
+ 
 }
