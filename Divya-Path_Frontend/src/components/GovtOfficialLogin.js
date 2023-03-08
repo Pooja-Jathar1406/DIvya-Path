@@ -7,10 +7,10 @@ import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useNavigate } from "react-router-dom";
-import { getAdminLoginDetailsFromServer } from "../Services/ApiServices";
+import { getGovtOfficialDetailsFromServer } from "../Services/ApiServices";
 import { Navigation } from "./Navigation";
 
-export function AdminLogin() {
+export function GovtOfficialLogin() {
   const [validated, setValidated] = useState(false);
 
   const initialValues = {
@@ -33,7 +33,7 @@ export function AdminLogin() {
     setFormErrors(validate(formValues));
     setIsSubmit(true);
 
-    const response = await getAdminLoginDetailsFromServer(formValues);
+    const response = await getGovtOfficialDetailsFromServer(formValues);
     console.log(response.data);
     if (response.data == "Login successful") {
       navigate("/admin-view");
@@ -83,7 +83,7 @@ export function AdminLogin() {
                   className="signupContent  border bg-white shadow  p-5 pt-4">
                   <div className="row mt-3 mb-3 text-center">
                     <h3 className="loginform justify-content-center">
-                      Admin Login
+                      Login as Government Official
                     </h3>
                   </div>
 

@@ -262,6 +262,13 @@ export function PlacesAdmin() {
                                       longer.
                                     </p>
                                     <p>Sector 3 - Kharghar</p>
+                                    <p>
+                                      <a
+                                        href="https://goo.gl/maps/eq6UZYzDHHdYvjuk9"
+                                        target="_blank">
+                                        View this place on map
+                                      </a>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
@@ -290,6 +297,13 @@ export function PlacesAdmin() {
                                       longer.
                                     </p>
                                     <p>Sector 3 - Kharghar</p>
+                                    <p>
+                                      <a
+                                        href="https://goo.gl/maps/eq6UZYzDHHdYvjuk9"
+                                        target="_blank">
+                                        View this place on map
+                                      </a>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
@@ -316,60 +330,13 @@ export function PlacesAdmin() {
                                       longer.
                                     </p>
                                     <p>Sector 3 - Kharghar</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <div className="card mb-3 shadow">
-                              <div className="row g-0">
-                                <div className="col-md-4">
-                                  <img
-                                    src="../Images/place1.jpg"
-                                    className="img-fluid rounded-start"
-                                    alt="..."
-                                    style={{ height: "100%" }}
-                                  />
-                                </div>
-                                <div className="col-md-8">
-                                  <div className="card-body">
-                                    <h5 className="card-title">XYZ Mall</h5>
-                                    <p className="card-text">
-                                      This is a wider card with supporting text
-                                      below as a natural lead-in to additional
-                                      content. This content is a little bit
-                                      longer.
+                                    <p>
+                                      <a
+                                        href="https://goo.gl/maps/eq6UZYzDHHdYvjuk9"
+                                        target="_blank">
+                                        View this place on map
+                                      </a>
                                     </p>
-                                    <p>Sector 3 - Kharghar</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-md-6">
-                            <div className="card mb-3 shadow">
-                              <div className="row g-0">
-                                <div className="col-md-4">
-                                  <img
-                                    src="../Images/place1.jpg"
-                                    className="img-fluid rounded-start"
-                                    alt="..."
-                                    style={{ height: "100%" }}
-                                  />
-                                </div>
-                                <div className="col-md-8">
-                                  <div className="card-body">
-                                    <h5 className="card-title">XYZ Mall</h5>
-                                    <p className="card-text">
-                                      This is a wider card with supporting text
-                                      below as a natural lead-in to additional
-                                      content. This content is a little bit
-                                      longer.
-                                    </p>
-                                    <p>Sector 3 - Kharghar</p>
                                   </div>
                                 </div>
                               </div>

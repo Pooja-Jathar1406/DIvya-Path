@@ -96,3 +96,11 @@
   width: fit-content;
 }
 
+.loginbtn{
+  color:  #FFDC00;
+  background-color:#020D2F;
+}
+.loginbtn:hover{
+  color:  #FFDC00;
+  background-color:#03154d;
+}

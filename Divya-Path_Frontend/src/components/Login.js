@@ -22,6 +22,18 @@ export function Login() {
   const [isSubmit, setIsSubmit] = useState(false);
   const [isError, setIsError] = useState(false);
 
+  // ------------------------------------------------------------
+  //------------ managing session ----------
+  const [token, setToken] = useState(
+    localStorage.getItem("session_token") || ""
+  );
+
+  useEffect(() => {
+    // Store the session token in local storage when it changes
+    localStorage.setItem("session_token", token);
+  }, [token]);
+  // ------------------------------------------------------------
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormValues({ ...formValues, [name]: value });
@@ -37,7 +49,8 @@ export function Login() {
     console.log(response.data);
 
     if (response.data == "Login successful") {
-      navigate("/marketplace");
+      setToken("my_session_token");
+      navigate("/");
     } else {
       alert("Incorrect email or password");
     }
@@ -65,12 +78,27 @@ export function Login() {
     return errors;
   };
 
+  function handleLogin() {
+    // Make an API call to authenticate the user
+    // If successful, set the session token in state
+    setToken("my_session_token");
+  }
+
+  function handleLogout() {
+    // Clear the session token from state
+    setToken("");
+  }
   return (
     <>
       <Navigation></Navigation>
       <div className="signUpBody">
         <Container>
           <div className="row justify-content-center "></div>
+          {token ? (
+            <button onClick={handleLogout}>Logout</button>
+          ) : (
+            <button onClick={handleLogin}>Login</button>
+          )}
           <Row className=" justify-content-center mt-5  ">
             <Form
               noValidate
@@ -113,7 +141,7 @@ export function Login() {
                     md="12"
                     controlId="validationCustom03"
                     className="mb-3">
-                    <Form.Label>Set password</Form.Label>
+                    <Form.Label>Enter password</Form.Label>
                     <Form.Control
                       type="password"
                       placeholder="Password"
