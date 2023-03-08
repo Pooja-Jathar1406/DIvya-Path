@@ -10,15 +10,22 @@ import { AdminSignUp } from "./components/AdminSignUp";
 import { GovtOfficialLogin } from "./components/GovtOfficialLogin";
 import { GovtOfficialSignUp } from "./components/GovtOfficialSignUp";
 
+ 
 import { Skills } from "./components/Skills";
 import { Places } from "./components/Places";
 import { AddPlaces } from "./components/AddPlaces";
 import { SuperAdminApproval } from "./components/SupeAdminApproval";
-// import { JobUser } from "./components/JobUser";
-// import { JobAdmin } from "./components/JobAdmin";
-
+ 
 // import { AddCourse } from "./components/AddCourse";
 // import { CoursePage } from "./components/CoursePage";
+ 
+import { JobUser } from "./components/JobUser";
+import { JobAdmin } from "./components/JobAdmin";
+import { AddJobAdmin } from "./components/AddJobAdmin";
+
+// import { AddCourse } from "./components/AddCourse";
+import { CoursePage } from "./components/CoursePage";
+ 
 
 import { PlacesAdmin } from "./components/PlacesAdmin";
 
@@ -39,9 +46,16 @@ function App() {
             path="/admin-sign-up"
             element={<AdminSignUp></AdminSignUp>}></Route>
 
-          <Route
-            path="/govtofficial-login"
-            element={<GovtOfficialLogin></GovtOfficialLogin>}></Route>
+ 
+          
+ 
+          <Route path="/jobs" element={<JobUser></JobUser>}></Route>
+          <Route path="/jobs-admin" element={<JobAdmin></JobAdmin>}></Route>
+          <Route path="/add-jobs-admin" element={<AddJobAdmin></AddJobAdmin>}></Route>
+
+          {/* <Route path="/addcourse" element={<AddCourse></AddCourse>}></Route> */}
+          <Route path="/coursepage" element={<CoursePage></CoursePage>}></Route>
+ 
 
           <Route
             path="/govtofficial-sign-up"

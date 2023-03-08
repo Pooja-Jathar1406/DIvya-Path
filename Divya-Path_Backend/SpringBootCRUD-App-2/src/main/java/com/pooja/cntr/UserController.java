@@ -3,6 +3,7 @@ package com.pooja.cntr;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +15,7 @@ import com.pooja.model.User;
 import com.pooja.service.UserService;
  
 
-@RestController
+@Controller
 @CrossOrigin
 public class UserController {
 	@Autowired
