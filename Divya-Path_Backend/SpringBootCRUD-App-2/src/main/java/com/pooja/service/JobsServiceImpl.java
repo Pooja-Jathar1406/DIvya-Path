@@ -1,5 +1,6 @@
 package com.pooja.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +41,10 @@ public class JobsServiceImpl implements JobsService{
 
 	@Override
 	public List<Jobs> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		Iterable<Jobs> itr = jobsDao.findAll();
+		List<Jobs> lst = new ArrayList<Jobs>();
+		itr.forEach(ele->lst.add(ele));
+		return lst;
 	}
+	
 }

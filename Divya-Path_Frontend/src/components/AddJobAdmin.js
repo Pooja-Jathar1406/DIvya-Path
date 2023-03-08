@@ -1,4 +1,4 @@
-import {React , useState, setState} from "react";
+import {React , useState} from "react";
 import { Navigation } from "./Navigation";
 import "../css/Home.css";
 import "../css/Navigation.css";
@@ -22,38 +22,43 @@ export function AddJobAdmin() {
   const [status, setStatus] = useState("");
   const [lastDateToApply, setLastDateToApply] = useState("");
   const [validated, setValidated] = useState(false);
+  const [addedJob, setAddedJob] = useState("");
 
   const handleSubmit = (event)=> {
     const form = event.currentTarget;
+    event.preventDefault();
+    
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+      
       setValidated(true);
     } else {
     const addedJob = { 
-      job,
-      description,
-      experience,
-      industry,
-      employmentType,
-      lastDateToApply,
-      location,
-      category,
-      status ,
+      job:job,
+      description:description,
+      experience:experience,
+      industry:industry,
+      employmentType:employmentType,
+      lastDateToApply:new Date(lastDateToApply),
+      location:location,
+      category:category,
+      status:status 
     };
-    
-    console.log(job);
-    console.log(description);
-    console.log(experience);
-    console.log(industry);
-    console.log(employmentType);
-    console.log(lastDateToApply);
-    console.log(location);
-    console.log(category);
-    console.log(status);
+
+    setJob('');
+    setDescription('');
+    setExperience('');
+    setIndustry('');
+    setEmploymentType('');
+    setLocation('');
+    setCategory('');
+    setStatus('');
+    setLastDateToApply('');
+    setAddedJob('');
+  
+
     console.log("Job details submitted:", addedJob);
 
-    fetch("http://localhost:8585/add-jobs-admin", {
+    fetch("http://localhost:8585/jobs-admin/add-job", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(addedJob),
@@ -61,10 +66,8 @@ export function AddJobAdmin() {
       console.log("New Job added");
     });
     }
+    
   };
-
- 
-
 
   return (
     <>
@@ -89,6 +92,7 @@ export function AddJobAdmin() {
               <Form.Control 
               placeholder="Write job title" 
               value={job}
+              required
               onChange={(e) => setJob(e.target.value)}
               />
             </Form.Group>
@@ -100,6 +104,7 @@ export function AddJobAdmin() {
               <Form.Control as="textarea" 
               aria-label="Write job description" 
               value={description}
+              required
               onChange={(e) => setDescription(e.target.value)}
               />
             </InputGroup>
@@ -112,6 +117,7 @@ export function AddJobAdmin() {
                 <Form.Control 
                 placeholder="In Years" 
                 value={experience}
+                required
                 onChange={(e) => setExperience(e.target.value)}
                 />
               </Col>
@@ -120,6 +126,7 @@ export function AddJobAdmin() {
                 <Form.Control
                 placeholder="" 
                 value={industry}
+                required
                 onChange={(e) => setIndustry(e.target.value)}
                 />
               </Col>
@@ -132,6 +139,7 @@ export function AddJobAdmin() {
                 <Form.Select 
                 aria-label="Default select example"
                 value={employmentType}
+                required
                 onChange={(e) => setEmploymentType(e.target.value)}
                 >
                   <option >Employment Type</option>
@@ -144,12 +152,14 @@ export function AddJobAdmin() {
               <Col>
                 <div className="lastdate"
                 value={lastDateToApply}
+                required
                 onChange={(e) => setLastDateToApply(e.target.value)}>
                 <label>Last Date to apply for job :</label>
                 <input type="date" ></input>
                 </div>
               </Col>
             </Row>
+
            <br/>
 
            <Row>
@@ -157,6 +167,7 @@ export function AddJobAdmin() {
               <Form.Select 
               aria-label="Default select example"
               value={location}
+              required
               onChange={(e) => setLocation(e.target.value)}
               >
                 <option >Select Location</option>
@@ -171,6 +182,7 @@ export function AddJobAdmin() {
               <Form.Select 
               aria-label="Default select example"
               value={category}
+              required
               onChange={(e) => setCategory(e.target.value)}
               >
                 <option >Select Category</option>
@@ -179,12 +191,13 @@ export function AddJobAdmin() {
                 <option >Speech</option>
                 <option >Hearing Disability</option>
               </Form.Select>
-                
               </Col>
+
               <Col>
               <Form.Select 
               aria-label="Default select example"
               value={status}
+              required
               onChange={(e) => setStatus(e.target.value)}
               >
                 <option >Set Status</option>
@@ -204,7 +217,9 @@ export function AddJobAdmin() {
           </Form>
       </Card.Body>
     </Card>
-
+      <h4>{job}</h4>
+      <h4>{description}</h4>
+      
     </div>
     </>
   );

@@ -18,6 +18,7 @@ import { AddJobAdmin } from "./components/AddJobAdmin";
 import { CoursePage } from "./components/CoursePage";
 
 import { PlacesAdmin } from "./components/PlacesAdmin";
+import { addJobFromServer } from "./Services/ApiServices";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
           <Route path="/skills" element={<Skills></Skills>}></Route>
 
           <Route path="/jobs" element={<JobUser></JobUser>}></Route>
-          <Route path="/jobs-admin" element={<JobAdmin></JobAdmin>}></Route>
+          <Route path="/jobs-admin" element={<JobAdmin item ={addJobFromServer}></JobAdmin>}></Route>
           <Route path="/add-jobs-admin" element={<AddJobAdmin></AddJobAdmin>}></Route>
 
           {/* <Route path="/addcourse" element={<AddCourse></AddCourse>}></Route> */}

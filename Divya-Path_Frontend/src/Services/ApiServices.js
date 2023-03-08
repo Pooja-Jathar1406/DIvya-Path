@@ -1,5 +1,6 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:8585/add-job-admin";
+const ADDJOB_URL = "http://localhost:8585/jobs-admin/add-job";
+const GETJOBLIST_URL = "http://localhost:8585/jobs-admin/get-list";
 const EWASTE_URL = "http://localhost:8585/product/byCategory/E-Waste";
 const GREENWASTE_URL = "http://localhost:8585/product/byCategory/Green Waste";
 const DOMESTICWASTE_URL =
@@ -11,14 +12,15 @@ const UPDATE_URL = "http://localhost:8585/product/update";
 const ADMINLOGIN_URL = "http://localhost:8585/admin/login";
 const FEEDBACK_URL = "http://localhost:8585/feedback/add";
 const FEEDBACKGET_URL = "http://localhost:8585/feedback";
-//--------- save products----------
+
+//--------- add jobs----------
 export async function addJobFromServer(addedJob) {
-  return axios.post(BASE_URL, addedJob);
+  return axios.post(ADDJOB_URL, addedJob);
 }
 
-//--------- get all productss----------
-export async function getAllProductsFromServer() {
-  return axios.get(BASE_URL);
+//--------- get all jobs----------
+export async function getAllJobsFromServer() {
+  return axios.get(GETJOBLIST_URL);
 }
 //--------- get E Waste productss----------
 export async function getEWasteProductsFromServer() {
