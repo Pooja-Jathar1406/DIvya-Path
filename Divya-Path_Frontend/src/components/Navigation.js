@@ -22,20 +22,20 @@ export class Navigation extends Component {
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
               <NavDropdown title="Action" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/login">User Login</NavDropdown.Item>
-                <NavDropdown.Item href="/sign-up">User SignUp</NavDropdown.Item>
-                <NavDropdown.Item href="/admin-login">
+                <NavDropdown.Item href="/login">Login</NavDropdown.Item>
+                <NavDropdown.Item href="/sign-up">SignUp</NavDropdown.Item>
+                {/* <NavDropdown.Item href="/admin-login">
                   Admin Login
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/admin-sign-up">
                   Admin SignUp
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/admin-login">
+                <NavDropdown.Item href="/govtofficial-login">
                   Govt Official Login
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/admin-sign-up">
+                <NavDropdown.Item href="/govtofficial-sign-up">
                   Govt Official SignUp
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/sign-out">Logout</NavDropdown.Item>
               </NavDropdown>
             </Nav>
