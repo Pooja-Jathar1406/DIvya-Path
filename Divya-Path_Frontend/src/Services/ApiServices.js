@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:8585/product";
+const BASE_URL = "http://localhost:8585/add-job-admin";
 const EWASTE_URL = "http://localhost:8585/product/byCategory/E-Waste";
 const GREENWASTE_URL = "http://localhost:8585/product/byCategory/Green Waste";
 const DOMESTICWASTE_URL =
@@ -12,8 +12,8 @@ const ADMINLOGIN_URL = "http://localhost:8585/admin/login";
 const FEEDBACK_URL = "http://localhost:8585/feedback/add";
 const FEEDBACKGET_URL = "http://localhost:8585/feedback";
 //--------- save products----------
-export async function addProduct(add) {
-  return axios.post(BASE_URL, add);
+export async function addJobFromServer(addedJob) {
+  return axios.post(BASE_URL, addedJob);
 }
 
 //--------- get all productss----------

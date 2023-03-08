@@ -1,4 +1,4 @@
-import {React , useState} from "react";
+import {React , useState, setState} from "react";
 import { Navigation } from "./Navigation";
 import "../css/Home.css";
 import "../css/Navigation.css";
@@ -9,7 +9,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Dropdown from 'react-bootstrap/Dropdown';
 
 export function AddJobAdmin() {
 
@@ -21,23 +20,51 @@ export function AddJobAdmin() {
   const [location, setLocation] = useState("");
   const [category, setCategory] = useState("");
   const [status, setStatus] = useState("");
-  const [date, setDate] = useState("");
-
+  const [lastDateToApply, setLastDateToApply] = useState("");
+  const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event)=> {
-    event.preventDefault();
-    event.stopPropagation();
-    const addedJob= { job, description, experience, industry, employmentType, date, location, category, status }
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      setValidated(true);
+    } else {
+    const addedJob = { 
+      job,
+      description,
+      experience,
+      industry,
+      employmentType,
+      lastDateToApply,
+      location,
+      category,
+      status ,
+    };
+    
     console.log(job);
     console.log(description);
     console.log(experience);
     console.log(industry);
     console.log(employmentType);
+    console.log(lastDateToApply);
     console.log(location);
     console.log(category);
     console.log(status);
     console.log("Job details submitted:", addedJob);
-  }
+
+    fetch("http://localhost:8585/add-jobs-admin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(addedJob),
+    }).then(() => {
+      console.log("New Job added");
+    });
+    }
+  };
+
+ 
+
 
   return (
     <>
@@ -52,14 +79,17 @@ export function AddJobAdmin() {
         <Card.Text>
          
         </Card.Text>
-          <Form onSubmit={handleSubmit}>
+          <Form 
+          onSubmit={handleSubmit}
+          noValidate
+          validated={validated}
+          >
           <Form.Group className="mb-3" controlId="formJobTitle">
               <Form.Label>Job Title</Form.Label>
               <Form.Control 
               placeholder="Write job title" 
               value={job}
               onChange={(e) => setJob(e.target.value)}
-              
               />
             </Form.Group>
 
@@ -113,9 +143,9 @@ export function AddJobAdmin() {
               </Col>
               <Col>
                 <div className="lastdate"
-                value={date}
-                onChange={(e) => setDate(e.target.value)}>
-                <label>Enter Last Date</label>
+                value={lastDateToApply}
+                onChange={(e) => setLastDateToApply(e.target.value)}>
+                <label>Last Date to apply for job :</label>
                 <input type="date" ></input>
                 </div>
               </Col>
@@ -168,7 +198,7 @@ export function AddJobAdmin() {
 
             <br/>
 
-            <Button variant="primary" type="submit" >
+            <Button variant="primary" type="submit" value="Send" data-show-if="">
               Add
             </Button>
           </Form>
@@ -180,4 +210,3 @@ export function AddJobAdmin() {
   );
 }
 
-// export default AddJobAdmin;
